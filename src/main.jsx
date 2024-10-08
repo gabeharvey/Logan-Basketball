@@ -3,6 +3,7 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css';
+import MainLayout from './components/MainLayout'; 
 
 const theme = extendTheme({
   styles: {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />, 
     children: [
+      { index: true, element: <MainLayout /> }, 
     ],
   },
 ]);

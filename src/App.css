@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
 
 #root {
   font-family: "Audiowide", sans-serif;
@@ -120,7 +121,7 @@
 }
 
 .tilt-prism-footer {
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Tilt Prism', sans-serif;
   font-size: 20px;
   font-weight: bold;
 }

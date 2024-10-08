@@ -147,7 +147,7 @@ import {
                 transition: 'width 0.3s ease',
               }}
             >
-              Home
+              Player Bio
             </Link>
             <Link
               as={RouterLink}
@@ -168,7 +168,7 @@ import {
                 transition: 'width 0.3s ease',
               }}
             >
-              Log In
+              Hoops Film
             </Link>
             <Link
               as={RouterLink}
@@ -189,7 +189,28 @@ import {
                 transition: 'width 0.3s ease',
               }}
             >
-              Sign Up
+              Player Cards
+            </Link>
+            <Link
+              as={RouterLink}
+              to="/signup"
+              fontSize="md"
+              color="#F8F8F8"
+              fontWeight="bold"
+              position="relative"
+              _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold'}}
+              _after={{
+                content: '""',
+                position: 'absolute',
+                bottom: '-0.2rem',
+                left: 0,
+                width: 0,
+                height: '2px',
+                bg: '#F8F8F8',
+                transition: 'width 0.3s ease',
+              }}
+            >
+              Academics
             </Link>
           </Flex>
   
@@ -254,7 +275,7 @@ import {
                       _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold'}}
                       onClick={onClose}
                     >
-                      Home
+                      Player Bio
                     </Link>
                     <Link
                       as={RouterLink}
@@ -265,7 +286,7 @@ import {
                       _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold'}}
                       onClick={onClose}
                     >
-                      Log In
+                      Hoops Film
                     </Link>
                     <Link
                       as={RouterLink}
@@ -276,7 +297,18 @@ import {
                       _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold'}}
                       onClick={onClose}
                     >
-                      Sign Up
+                      Player Cards
+                    </Link>
+                    <Link
+                      as={RouterLink}
+                      to="/signup"
+                      fontSize="md"
+                      fontWeight="bold"
+                      color="#F8F8F8"
+                      _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold'}}
+                      onClick={onClose}
+                    >
+                      Academics
                     </Link>
                   </Flex>
                 </motion.div>
