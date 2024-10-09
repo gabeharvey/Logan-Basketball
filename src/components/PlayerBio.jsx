@@ -38,7 +38,7 @@ function PlayerBio({ frontImg, name, bioCategories }) {
         w={{ base: '90%', md: '600px' }}
         bgColor="#00B2A9"
         bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
-        bgSize="5px 5px;"
+        bgSize="3px 3px;"
         borderRadius="12px"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
         p={6}
@@ -65,6 +65,10 @@ function PlayerProfile() {
     frontImg: "../basketball-player.png",
     name: "Player Bio", 
     bioCategories: [
+      {
+        title: "Class",
+        description: "2026"
+      },
       {
         title: "Position",
         description: "SG"

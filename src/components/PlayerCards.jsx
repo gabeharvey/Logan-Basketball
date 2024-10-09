@@ -44,7 +44,7 @@ function Card({ frontImg, name, bio, flipSound }) {
         <Box
           bgColor="#00B2A9"
           bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
-          bgSize="5px 5px;"
+          bgSize="3px 3px;"
           position="absolute"
           style={{ backfaceVisibility: 'hidden' }}
           w="100%"

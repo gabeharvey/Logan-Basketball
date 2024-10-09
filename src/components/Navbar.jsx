@@ -67,7 +67,7 @@ const Navbar = () => {
         <Box
             bgColor="#00B2A9"
             bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
-            bgSize="5px 5px;"
+            bgSize="3px 3px;"
             py="2.5rem"
             px="2rem"
             position="relative"
@@ -247,7 +247,7 @@ const Navbar = () => {
                             height="100vh"
                             bgColor="#00B2A9"
                             bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
-                            bgSize="5px 5px;"
+                            bgSize="3px 3px;"
                             zIndex="overlay"
                             color="#F8F8F8"
                             borderTopLeftRadius="30px"

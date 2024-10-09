@@ -36,7 +36,7 @@ function Footer() {
               variant="ghost"
               color="#F8F8F8"
               fontSize="24px"
-              _hover={{ color: 'yellow.400' }} 
+              _hover={{ color: 'yellow.200' }} 
             />
           </Flex>
           <div className="footer-logo">©2024 Logan Gonzalez</div>
