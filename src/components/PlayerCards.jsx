@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Box, Text, VStack, SimpleGrid } from '@chakra-ui/react';
+import { Box, Text, VStack, SimpleGrid, useBreakpointValue } from '@chakra-ui/react';
 import { useState } from 'react';
 
 function Card({ frontImg, name, bio, flipSound }) {
@@ -19,7 +19,7 @@ function Card({ frontImg, name, bio, flipSound }) {
         style={{ transformStyle: 'preserve-3d' }}
         transition="transform 0.6s"
         transform={flipped ? 'rotateY(180deg)' : 'rotateY(0deg)'}
-        onClick={handleFlip} 
+        onClick={handleFlip}
       >
         <Box
           position="absolute"
@@ -116,12 +116,29 @@ function PlayerCards() {
     },
   ];
 
+  const columns = useBreakpointValue({ base: 1, sm: 1, md: 2, lg: 3, xl: 4 });
+
   return (
-    <VStack spacing={8} align="center" justify="center" p={10} bgImage="url('/basketball.png')" bgSize="contain" bgPosition="center" bgRepeat="no-repeat" h="100vh" mb="300px">
+    <VStack
+      spacing={8}
+      align="center"
+      justify="center"
+      p={{ base: 5, md: 10 }}
+      bgImage="url('/basketball.png')"
+      bgSize="contain"
+      bgPosition="center"
+      bgRepeat="no-repeat"
+      mt={{ base: 12, md: 16 }} 
+      mb={{ base: 12, md: 16 }} 
+    >
       <Text fontSize="3xl" color="#F8F8F8" fontFamily="'Audiowide', sans-serif">
         Click on Card
       </Text>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={5} justifyItems="center">
+      <SimpleGrid
+        columns={columns}
+        spacing={{ base: 3, sm: 5 }} 
+        justifyItems="center"
+      >
         {players.map((player, index) => (
           <Card 
             key={index} 

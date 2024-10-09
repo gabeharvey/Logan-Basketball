@@ -212,6 +212,27 @@ import {
             >
               Academics
             </Link>
+            <Link
+              as={RouterLink}
+              to="/signup"
+              fontSize="md"
+              color="#F8F8F8"
+              fontWeight="bold"
+              position="relative"
+              _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold'}}
+              _after={{
+                content: '""',
+                position: 'absolute',
+                bottom: '-0.2rem',
+                left: 0,
+                width: 0,
+                height: '2px',
+                bg: '#F8F8F8',
+                transition: 'width 0.3s ease',
+              }}
+            >
+              Stat Tracker
+            </Link>
           </Flex>
   
           {isOpen && (
@@ -309,6 +330,17 @@ import {
                       onClick={onClose}
                     >
                       Academics
+                    </Link>
+                    <Link
+                      as={RouterLink}
+                      to="/signup"
+                      fontSize="md"
+                      fontWeight="bold"
+                      color="#F8F8F8"
+                      _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold'}}
+                      onClick={onClose}
+                    >
+                      Stat Tracker
                     </Link>
                   </Flex>
                 </motion.div>
