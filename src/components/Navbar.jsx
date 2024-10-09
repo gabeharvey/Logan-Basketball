@@ -253,6 +253,7 @@ const Navbar = () => {
                             borderTopLeftRadius="30px"
                             borderBottomLeftRadius="30px"
                             boxShadow="0 0 20px rgba(0, 0, 0, 0.9)"
+                            whiteSpace="nowrap"
                         >
                             <motion.div variants={itemVariants}>
                                 <Flex alignItems="center" justifyContent="space-between" mb="1rem">
