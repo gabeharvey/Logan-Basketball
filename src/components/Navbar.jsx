@@ -79,12 +79,12 @@ const Navbar = () => {
                 <Heading
                     as={RouterLink}
                     to="/"
-                    fontSize="2xl"
+                    fontSize="3xl"
                     fontFamily="'Audiowide', sans-serif"
                     color="#F8F8F8"
                     letterSpacing="wider"
                 >
-                    Logan Gonzalez
+                    Logan Gonzalez #0
                 </Heading>
                 <Spacer />
                 <IconButton

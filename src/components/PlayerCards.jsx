@@ -131,7 +131,7 @@ function PlayerCards() {
       mt={{ base: 12, md: 16 }} 
       mb={{ base: 12, md: 16 }} 
     >
-      <Text fontSize="2xl" color="#F8F8F8" fontFamily="'Audiowide', sans-serif" fontWeight="bold">
+      <Text fontSize="2xl" color="#001f3f" fontFamily="'Audiowide', sans-serif" fontWeight="bold">
         Click on Card
       </Text>
       <SimpleGrid

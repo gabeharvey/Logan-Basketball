@@ -15,7 +15,7 @@ function PlayerBio({ frontImg, name, bioCategories }) {
       mt={16} 
       mb={16} 
     >
-      <Heading fontSize="2xl" color="#F8F8F8" fontFamily="'Audiowide', sans-serif">
+      <Heading fontSize="2xl" color="#001f3f" fontFamily="'Audiowide', sans-serif">
         {name}
       </Heading>
       <Box
