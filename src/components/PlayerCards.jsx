@@ -42,7 +42,7 @@ function Card({ frontImg, name, bio, flipSound }) {
           ></Box>
         </Box>
         <Box
-          bgColor="#B0E0E6"
+          bgColor="#00B2A9"
           bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
           bgSize="5px 5px;"
           position="absolute"
@@ -131,7 +131,7 @@ function PlayerCards() {
       mt={{ base: 12, md: 16 }} 
       mb={{ base: 12, md: 16 }} 
     >
-      <Text fontSize="3xl" color="#F8F8F8" fontFamily="'Audiowide', sans-serif">
+      <Text fontSize="2xl" color="#F8F8F8" fontFamily="'Audiowide', sans-serif" fontWeight="bold">
         Click on Card
       </Text>
       <SimpleGrid
