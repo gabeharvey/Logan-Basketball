@@ -67,20 +67,20 @@ const Navbar = () => {
         <Box
             bgColor="#00B2A9"
             bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
-            bgSize="3px 3px;"
+            bgSize="1px 1px;"
             py="2.5rem"
             px="2rem"
             position="relative"
             boxShadow="lg"
             mb="10px"
-            fontFamily="'Audiowide', sans-serif"
+            fontFamily="'Coda', system-ui"
         >
             <Flex alignItems="center" justifyContent="space-between" wrap="wrap">
                 <Heading
                     as={RouterLink}
                     to="/"
                     fontSize="3xl"
-                    fontFamily="'Audiowide', sans-serif"
+                    fontFamily="'Coda', system-ui"
                     color="#F8F8F8"
                     letterSpacing="wider"
                 >
@@ -247,7 +247,7 @@ const Navbar = () => {
                             height="100vh"
                             bgColor="#00B2A9"
                             bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
-                            bgSize="3px 3px;"
+                            bgSize="1px 1px;"
                             zIndex="overlay"
                             color="#F8F8F8"
                             borderTopLeftRadius="30px"

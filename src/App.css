@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family'Coda&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap");
 
 #root {
-  font-family: "Audiowide", sans-serif;
+  font-family: "Coda", system-ui;
   background-color: #B2FF8C;
 }
 
@@ -22,14 +23,14 @@
 }
 
 .navbar {
-  font-family: "Audiowide", sans-serif;
+  font-family: "Coda", system-ui;
   display: flex;
   justify-content: space-between; 
   align-items: center;
   padding: 10px 20px;
   background-color: #B2FF8C;
   background-image: linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent);
-  background-size: 3px 3px;
+  background-size: 1px 1px;
 }
 
 .navbar .nav-links {
@@ -40,14 +41,14 @@
 }
 
 .logo {
-  font-family: "Audiowide", sans-serif;
+  font-family: "Coda", system-ui;
   color: #F8F8F8; 
   font-size: 42px;
   font-weight: bold;
 }
 
 .nav-links {
-  font-family: 'Changa', cursive;
+  font-family: "Coda", system-ui;
   list-style-type: none;
   display: flex;
   margin: 0;
@@ -59,7 +60,7 @@
 }
 
 .nav-link {
-  font-family: 'Changa', cursive;
+  font-family: "Coda", system-ui;
   color: #F8F8F8; 
   text-decoration: none;
   font-size: 18px;
@@ -72,11 +73,11 @@
 
 .footer {
   background-color: #00B2A9; 
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Coda', sans-serif;
   padding: 20px;
   text-align: center;
   background-image: linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent);
-  background-size: 3px 3px;
+  background-size: 1px 1px;
 }
 
 .footer-content {
@@ -90,6 +91,7 @@
 .footer-logo {
   color: #F8F8F8; 
   font-size: 20px;
+  font-weight: bold;
   margin-bottom: 10px; 
 }
 
@@ -122,6 +124,5 @@
 
 .tilt-prism-footer {
   font-family: 'Tilt Prism', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 24px;
 }

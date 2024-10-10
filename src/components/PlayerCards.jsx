@@ -44,7 +44,7 @@ function Card({ frontImg, name, bio, flipSound }) {
         <Box
           bgColor="#00B2A9"
           bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
-          bgSize="3px 3px;"
+          bgSize="1px 1px;"
           position="absolute"
           style={{ backfaceVisibility: 'hidden' }}
           w="100%"
@@ -58,10 +58,10 @@ function Card({ frontImg, name, bio, flipSound }) {
           transform="rotateY(180deg)"
           p={5}
         >
-          <Text fontSize="2xl" fontWeight="bold" color="#F8F8F8" fontFamily="'Audiowide', sans-serif">
+          <Text fontSize="2xl" fontWeight="bold" color="#F8F8F8" fontFamily="'Coda', system-ui">
             {name}
           </Text>
-          <Text mt={4} color="#F8F8F8" fontFamily="'Audiowide', sans-serif" fontWeight="bold">
+          <Text mt={4} color="#F8F8F8" fontFamily="'Coda', system-ui" fontWeight="bold">
             Player Bio: {bio}
           </Text>
         </Box>
@@ -131,7 +131,7 @@ function PlayerCards() {
       mt={{ base: 12, md: 16 }} 
       mb={{ base: 12, md: 16 }} 
     >
-      <Text fontSize="2xl" color="#001f3f" fontFamily="'Audiowide', sans-serif" fontWeight="bold">
+      <Text fontSize="2xl" color="#001f3f" fontFamily="'Coda', system-ui" fontWeight="bold">
         Click on Card
       </Text>
       <SimpleGrid

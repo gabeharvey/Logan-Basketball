@@ -1,7 +1,7 @@
 import { Box, Text, VStack, Heading, Grid } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
-const MotionBox = motion(Box);
+const MotionBox = motion.create(Box); 
 
 function PlayerProfile() {
   const player = {
@@ -32,7 +32,7 @@ function PlayerProfile() {
       mt={16} 
       mb={16} 
     >
-      <Heading fontSize="2xl" color="#001f3f" fontFamily="'Audiowide', sans-serif">
+      <Heading fontSize="2xl" color="#001f3f" fontFamily="'Coda', system-ui">
         {player.name}
       </Heading>
       <Box
@@ -55,7 +55,7 @@ function PlayerProfile() {
         w={{ base: '90%', md: '600px' }}
         bgColor="#00B2A9"
         bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
-        bgSize="3px 3px"
+        bgSize="1px 1px"
         borderRadius="12px"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
         p={6}
@@ -66,10 +66,10 @@ function PlayerProfile() {
         <Grid gap={4}>
           {player.bioCategories.map((category, index) => (
             <Box key={index} p={3} bgColor="transparent" borderRadius="8px">
-              <Text color="#F8F8F8" fontWeight="bold" fontFamily="'Audiowide', sans-serif" fontSize="lg">
+              <Text color="#F8F8F8" fontWeight="bold" fontFamily="'Coda', system-ui" fontSize="lg">
                 {category.title}
               </Text>
-              <Text color="#F8F8F8" fontFamily="'Audiowide', sans-serif" mt={1}>
+              <Text color="#F8F8F8" fontFamily="'Coda', system-ui" mt={1}>
                 {category.description}
               </Text>
             </Box>
