@@ -136,7 +136,7 @@ const Navbar = () => {
                         color="#F8F8F8"
                         fontWeight="bold"
                         position="relative"
-                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold' }}
+                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#F28C28' }}
                         _after={{
                             content: '""',
                             position: 'absolute',
@@ -157,7 +157,7 @@ const Navbar = () => {
                         color="#F8F8F8"
                         fontWeight="bold"
                         position="relative"
-                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold' }}
+                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#F28C28' }}
                         _after={{
                             content: '""',
                             position: 'absolute',
@@ -178,7 +178,7 @@ const Navbar = () => {
                         color="#F8F8F8"
                         fontWeight="bold"
                         position="relative"
-                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold' }}
+                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#F28C28' }}
                         _after={{
                             content: '""',
                             position: 'absolute',
@@ -199,7 +199,7 @@ const Navbar = () => {
                         color="#F8F8F8"
                         fontWeight="bold"
                         position="relative"
-                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold' }}
+                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#F28C28' }}
                         _after={{
                             content: '""',
                             position: 'absolute',
@@ -220,7 +220,7 @@ const Navbar = () => {
                         color="#F8F8F8"
                         fontWeight="bold"
                         position="relative"
-                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: 'gold' }}
+                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#F28C28' }}
                         _after={{
                             content: '""',
                             position: 'absolute',
@@ -284,7 +284,7 @@ const Navbar = () => {
                                         fontSize="lg"
                                         color="#F8F8F8"
                                         fontWeight="bold"
-                                        _hover={{ color: 'gold' }}
+                                        _hover={{ color: '#F28C28' }}
                                     >
                                         Player Bio
                                     </Link>
@@ -294,7 +294,7 @@ const Navbar = () => {
                                         fontSize="lg"
                                         color="#F8F8F8"
                                         fontWeight="bold"
-                                        _hover={{ color: 'gold' }}
+                                        _hover={{ color: '#F28C28' }}
                                     >
                                         Hoops Film
                                     </Link>
@@ -304,7 +304,7 @@ const Navbar = () => {
                                         fontSize="lg"
                                         color="#F8F8F8"
                                         fontWeight="bold"
-                                        _hover={{ color: 'gold' }}
+                                        _hover={{ color: '#F28C28' }}
                                     >
                                         Player Cards
                                     </Link>
@@ -314,7 +314,7 @@ const Navbar = () => {
                                         fontSize="lg"
                                         color="#F8F8F8"
                                         fontWeight="bold"
-                                        _hover={{ color: 'gold' }}
+                                        _hover={{ color: '#F28C28' }}
                                     >
                                         Academics
                                     </Link>
@@ -324,7 +324,7 @@ const Navbar = () => {
                                         fontSize="lg"
                                         color="#F8F8F8"
                                         fontWeight="bold"
-                                        _hover={{ color: 'gold' }}
+                                        _hover={{ color: '#F28C28' }}
                                     >
                                         Stat Tracker
                                     </Link>
