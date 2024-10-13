@@ -2,7 +2,7 @@
 import { Box, Text, VStack, SimpleGrid, useBreakpointValue } from '@chakra-ui/react';
 import { useState } from 'react';
 
-function Card({ frontImg, name, bio, flipSound }) {
+function Card({ frontImg, bio, flipSound }) {
   const [flipped, setFlipped] = useState(false);
 
   const handleFlip = () => {
