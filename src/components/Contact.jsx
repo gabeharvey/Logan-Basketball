@@ -14,19 +14,20 @@ function Contact() {
       bgSize="contain"
       bgPosition="center"
       bgRepeat="no-repeat"
-      mt={16}
       mb={16}
     >
-      <Heading fontSize="2xl" color="#001f3f" fontFamily="'Coda', system-ui">
+      <Heading fontSize="3xl" fontWeight="medium" color="#F28C28" fontFamily="'Coda', system-ui">
         Contact Us
       </Heading>
       
       <MotionBox
         w={{ base: '90%', md: '600px' }}
         bgColor="#00B2A9"
-        bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
+        bgImage="linear-gradient(-45deg, #38393d 25%, transparent 25%, transparent 50%, #38393d 50%, #38393d 75%, transparent 75%, transparent)"
         bgSize="1px 1px"
         borderRadius="12px"
+        borderColor="#F28C28"
+        borderWidth="4px"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
         p={6}
         initial={{ scale: 0.8, opacity: 0 }}
@@ -35,40 +36,40 @@ function Contact() {
       >
         <Grid gap={4}>
           <FormControl id="name">
-            <FormLabel color="#F8F8F8" fontWeight="bold" fontFamily="'Coda', system-ui">
+            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui">
               Name
             </FormLabel>
             <Input
               placeholder="Your Name"
               bgColor="#F8F8F8"
-              color="#001f3f"
+              color="#38383d"
               borderRadius="8px"
               _placeholder={{ color: 'gray.500' }}
             />
           </FormControl>
 
           <FormControl id="email">
-            <FormLabel color="#F8F8F8" fontWeight="bold" fontFamily="'Coda', system-ui">
+            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui">
               Email
             </FormLabel>
             <Input
               type="email"
               placeholder="Your Email"
               bgColor="#F8F8F8"
-              color="#001f3f"
+              color="#38393d"
               borderRadius="8px"
               _placeholder={{ color: 'gray.500' }}
             />
           </FormControl>
 
           <FormControl id="message">
-            <FormLabel color="#F8F8F8" fontWeight="bold" fontFamily="'Coda', system-ui">
+            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui">
               Message
             </FormLabel>
             <Textarea
               placeholder="Your Message"
               bgColor="#F8F8F8"
-              color="#001f3f"
+              color="#38393d"
               borderRadius="8px"
               _placeholder={{ color: 'gray.500' }}
               rows={4}
@@ -77,11 +78,18 @@ function Contact() {
 
           <Button
             mt={4}
-            bgColor="#B2FF8C"
-            color="#001f3f"
+            bgColor="#000000"
+            color="#F8F8F8"
+            minW="50%"
+            maxW="45%"
+            alignSelf="center"
             fontFamily="'Coda', system-ui"
+            fontWeight="medium"
+            fontSize="xl"
             borderRadius="8px"
-            _hover={{ bgColor: 'silver' }}
+            borderColor="#000000"
+            borderWidth="3px"
+            _hover={{ borderColor: '#F8F8F8' }}
           >
             Submit
           </Button>

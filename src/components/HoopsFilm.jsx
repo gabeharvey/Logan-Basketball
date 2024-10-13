@@ -8,10 +8,12 @@ function VideoCard({ videoSrc, title, description }) {
         w="100%"
         h="100%"
         borderRadius="12px"
+        borderWidth="4px"
+        borderColor="#F28C28"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
         overflow="hidden"
-        bgColor="#00B2A9"
-        bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
+        bgColor="#F28C28"
+        bgImage="linear-gradient(-45deg, #F28C28 25%, transparent 25%, transparent 50%, #F28C28 50%, #F28C28 75%, transparent 75%, transparent)"
         bgSize="1px 1px"
         display="flex"
         flexDirection="column"
@@ -28,11 +30,11 @@ function VideoCard({ videoSrc, title, description }) {
             }}
           />
         </Box>
-        <Box p={3} textAlign="center" bgColor="#001f3f" h="30%">
-          <Text fontSize="lg" fontWeight="bold" color="#F8F8F8" fontFamily="'Coda', system-ui">
+        <Box p={3} textAlign="center" bgColor="#F8F8F8" h="30%">
+          <Text fontSize="xl" fontWeight="semibold" color="#000000" fontFamily="'Coda', system-ui">
             {title}
           </Text>
-          <Text mt={2} color="#F8F8F8" fontFamily="'Coda', system-ui">
+          <Text mt={2} fontSize="lg" fontWeight="bold" color="#38393d" fontFamily="'Roboto+Condensed', system-ui">
             {description}
           </Text>
         </Box>
@@ -100,7 +102,7 @@ function HoopsFilm() {
       mt={{ base: 12, md: 16 }}
       mb={{ base: 12, md: 16 }}
     >
-      <Text fontSize="2xl" color="#001f3f" fontFamily="'Coda', system-ui" fontWeight="bold">
+      <Text fontSize="3xl" fontWeight="medium" color="#F28C28" fontFamily="'Coda', system-ui">
         Hoops Film
       </Text>
       <SimpleGrid columns={columns} spacing={{ base: 3, sm: 5 }} justifyItems="center">

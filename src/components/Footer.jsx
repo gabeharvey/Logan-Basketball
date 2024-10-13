@@ -1,20 +1,22 @@
 import { Link } from 'react-router-dom';
-import { IconButton, Flex } from '@chakra-ui/react';
+import { IconButton, Flex, Box } from '@chakra-ui/react';
 import { FaFacebookF, FaInstagram, FaSnapchatGhost } from 'react-icons/fa';
 
 function Footer() {
   return (
+    <Box>
     <footer className="footer">
       <div className="footer-content">
-        <Flex direction="column" alignItems="center" justifyContent="center">
-          <Flex gap="1rem" mb="1rem"> 
-            <IconButton 
+          <Flex justify="space-between" mt="1" direction={['column', 'row']} gap="1rem"> 
+          <div className="footer-logo">©2024 Logan Gonzalez</div>
+          <Flex alignItems="center">
+          <IconButton 
               as={Link}
               to="https://facebook.com" 
               aria-label="Facebook"
               icon={<FaFacebookF />}
               variant="ghost"
-              color="#F8F8F8"
+              color="#000000"
               fontSize="24px"
               _hover={{ color: 'blue.500' }} 
             />
@@ -24,7 +26,7 @@ function Footer() {
               aria-label="Instagram"
               icon={<FaInstagram />}
               variant="ghost"
-              color="#F8F8F8"
+              color="#000000"
               fontSize="24px"
               _hover={{ color: 'pink.500' }} 
             />
@@ -34,16 +36,18 @@ function Footer() {
               aria-label="Snapchat"
               icon={<FaSnapchatGhost />}
               variant="ghost"
-              color="#F8F8F8"
+              color="#000000"
               fontSize="24px"
               _hover={{ color: 'yellow' }} 
             />
           </Flex>
-          <div className="footer-logo">©2024 Logan Gonzalez</div>
+          <Flex alignItems='center' justifyContent={['center', 'flex-end']}>
           <div><span className="tilt-prism-footer">Athlete X Elite</span></div>
-        </Flex>
+          </Flex>
+          </Flex>
       </div>
     </footer>
+    </Box>
   );
 }
 
