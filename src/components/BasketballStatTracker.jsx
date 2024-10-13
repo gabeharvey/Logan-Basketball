@@ -64,27 +64,28 @@ function BasketballStatTracker() {
       bgPosition="center"
       bgRepeat="no-repeat"
       mt={16}
-      mb={16}
     >
-      <Heading fontSize="2xl" color="#001f3f" fontFamily="'Coda', system-ui">
-        Basketball Stat Tracker
+      <Heading fontSize="3xl" fontWeight="medium" color="#F28C28" fontFamily="'Coda', system-ui">
+        Game Stat Tracker
       </Heading>
 
       <MotionBox
         w={{ base: '90%', md: '600px' }}
-        bgColor="#001f3f"
+        bgColor="#F8F8F8"
         borderRadius="12px"
+        borderColor="#38393d"
+        borderWidth="5px"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
         p={6}
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 5, ease: 'easeOut' }}
       >
-        <Heading fontSize="lg" color="#F8F8F8" fontFamily="'Coda', system-ui" mb={4}>
-          Game Stats
+        <Heading fontSize="lg" color="#000000" fontFamily="'Coda', system-ui" mb={4}>
+          Player Stats:
         </Heading>
         {games.length === 0 ? (
-          <Text color="#F8F8F8">No games added yet.</Text>
+          <Text color="#000000">No games added yet.</Text>
         ) : (
           <Grid gap={4}>
             {games.map((game, index) => (
@@ -109,9 +110,11 @@ function BasketballStatTracker() {
       <MotionBox
         w={{ base: '90%', md: '600px' }}
         bgColor="#00B2A9"
-        bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
+        bgImage="linear-gradient(-45deg, #38393d 25%, transparent 25%, transparent 50%, #38393d 50%, #38393d 75%, transparent 75%, transparent)"
         bgSize="1px 1px"
         borderRadius="12px"
+        borderColor="#F28C28"
+        borderWidth="4px"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
         p={6}
         initial={{ scale: 0.8, opacity: 0 }}
@@ -120,12 +123,12 @@ function BasketballStatTracker() {
       >
         <VStack spacing={4} align="stretch">
           <FormControl>
-            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui">
+            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui" fontSize="lg">
               Team
             </FormLabel>
             <Input
               bgColor="#FFFFFF"
-              color="#001f3f"
+              color="#38393d"
               value={gameInfo.team}
               name="team"
               onChange={handleGameInfoChange}
@@ -133,12 +136,12 @@ function BasketballStatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui">
+            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui" fontSize="lg">
               Opponent
             </FormLabel>
             <Input
               bgColor="#FFFFFF"
-              color="#001f3f"
+              color="#38393d"
               value={gameInfo.opponent}
               name="opponent"
               onChange={handleGameInfoChange}
@@ -146,13 +149,13 @@ function BasketballStatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui">
+            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui" fontSize="lg">
               Date
             </FormLabel>
             <Input
               type="date"
               bgColor="#FFFFFF"
-              color="#001f3f"
+              color="#38393d"
               value={gameInfo.date}
               name="date"
               onChange={handleGameInfoChange}
@@ -160,12 +163,12 @@ function BasketballStatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui">
+            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui" fontSize="lg">
               Points
             </FormLabel>
             <Input
               bgColor="#FFFFFF"
-              color="#001f3f"
+              color="#38393d"
               value={stats.points}
               name="points"
               onChange={handleInputChange}
@@ -173,12 +176,12 @@ function BasketballStatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui">
+            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui" fontSize="lg">
               Assists
             </FormLabel>
             <Input
               bgColor="#FFFFFF"
-              color="#001f3f"
+              color="#38393d"
               value={stats.assists}
               name="assists"
               onChange={handleInputChange}
@@ -186,12 +189,12 @@ function BasketballStatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui">
+            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui" fontSize="lg">
               Rebounds
             </FormLabel>
             <Input
               bgColor="#FFFFFF"
-              color="#001f3f"
+              color="#38393d"
               value={stats.rebounds}
               name="rebounds"
               onChange={handleInputChange}
@@ -199,12 +202,12 @@ function BasketballStatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui">
+            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui" fontSize="lg">
               Steals
             </FormLabel>
             <Input
               bgColor="#FFFFFF"
-              color="#001f3f"
+              color="#38393d"
               value={stats.steals}
               name="steals"
               onChange={handleInputChange}
@@ -212,12 +215,12 @@ function BasketballStatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui">
+            <FormLabel color="#F8F8F8" fontFamily="'Coda', system-ui" fontSize="lg">
               Blocks
             </FormLabel>
             <Input
               bgColor="#FFFFFF"
-              color="#001f3f"
+              color="#38393d"
               value={stats.blocks}
               name="blocks"
               onChange={handleInputChange}
@@ -227,11 +230,17 @@ function BasketballStatTracker() {
           <Button
             onClick={handleAddGame}
             mt={4}
-            bgColor="#B2FF8C"
-            color="#001f3f"
+            bgColor="#000000"
+            maxW="50%"
+            minW="45%"
+            color="#F8F8F8"
             fontFamily="'Coda', system-ui"
+            fontWeight="medium"
+            fontSize="xl"
             borderRadius="8px"
-            _hover={{ bgColor: 'silver' }}
+            borderColor="#000000"
+            borderWidth="3px"
+            _hover={{ borderColor: '#F8F8F8' }}
           >
             Add Game
           </Button>

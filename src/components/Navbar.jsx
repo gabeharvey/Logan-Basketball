@@ -65,15 +65,14 @@ const Navbar = () => {
 
     return (
         <Box
-            bgColor="#00B2A9"
-            bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
+            bgColor="#ebebeb"
             bgSize="1px 1px;"
+            borderBottomRadius="12px"
             py="2.5rem"
             px="2rem"
             position="relative"
             boxShadow="lg"
             mb="10px"
-            fontFamily="'Coda', system-ui"
         >
             <Flex alignItems="center" justifyContent="space-between" wrap="wrap">
                 <Heading
@@ -81,8 +80,9 @@ const Navbar = () => {
                     to="/"
                     fontSize="3xl"
                     fontFamily="'Coda', system-ui"
-                    color="#F8F8F8"
+                    color="#000000"
                     letterSpacing="wider"
+                    // _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#000000' }}
                 >
                     Logan Gonzalez #0
                 </Heading>
@@ -95,7 +95,7 @@ const Navbar = () => {
                                 whileHover={{ scale: 1.2, color: 'rgba(255, 215, 0, 1)' }}
                                 animate={{ y: [0, -5, 0] }}
                                 transition={{ duration: 0.5, repeat: Infinity, repeatType: 'loop' }}
-                                style={{ color: '#F8F8F8' }}
+                                style={{ color: '#e47608' }}
                             >
                                 <CloseIcon />
                             </motion.div>
@@ -104,7 +104,7 @@ const Navbar = () => {
                                 whileHover={{ scale: 1.2, color: 'rgba(255, 215, 0, 1)' }}
                                 animate={{ y: [0, -5, 0] }}
                                 transition={{ duration: 0.5, repeat: Infinity, repeatType: 'loop' }}
-                                style={{ color: '#F8F8F8' }}
+                                style={{ color: '#e47608' }}
                             >
                                 <CgMenuGridO />
                             </motion.div>
@@ -121,6 +121,7 @@ const Navbar = () => {
                 <Flex
                     as="ul"
                     display={['none', 'none', 'flex']}
+                    fontFamily="'roboto+Condensed', system-ui"
                     listStyleType="none"
                     ml="auto"
                     alignItems="center"
@@ -132,9 +133,9 @@ const Navbar = () => {
                     <Link
                         as={RouterLink}
                         to="/"
-                        fontSize="md"
-                        color="#F8F8F8"
-                        fontWeight="bold"
+                        fontSize="lg"
+                        color="#000000"
+                        fontWeight="extrabold"
                         position="relative"
                         _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#F28C28' }}
                         _after={{
@@ -148,16 +149,16 @@ const Navbar = () => {
                             transition: 'width 0.3s ease',
                         }}
                     >
-                        Player Bio
+                        PLAYER BIO
                     </Link>
                     <Link
                         as={RouterLink}
                         to="/login"
-                        fontSize="md"
-                        color="#F8F8F8"
-                        fontWeight="bold"
+                        fontSize="lg"
+                        color="#000000"
+                        fontWeight="extrabold"
                         position="relative"
-                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#F28C28' }}
+                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#e47608' }}
                         _after={{
                             content: '""',
                             position: 'absolute',
@@ -169,16 +170,16 @@ const Navbar = () => {
                             transition: 'width 0.3s ease',
                         }}
                     >
-                        Hoops Film
+                        HOOPS FILM
                     </Link>
                     <Link
                         as={RouterLink}
                         to="/signup"
-                        fontSize="md"
-                        color="#F8F8F8"
-                        fontWeight="bold"
+                        fontSize="lg"
+                        color="#000000"
+                        fontWeight="extrabold"
                         position="relative"
-                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#F28C28' }}
+                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#e47608' }}
                         _after={{
                             content: '""',
                             position: 'absolute',
@@ -190,16 +191,16 @@ const Navbar = () => {
                             transition: 'width 0.3s ease',
                         }}
                     >
-                        Player Cards
+                        PLAYER CARDS
                     </Link>
                     <Link
                         as={RouterLink}
                         to="/signup"
-                        fontSize="md"
-                        color="#F8F8F8"
-                        fontWeight="bold"
+                        fontSize="lg"
+                        color="#000000"
+                        fontWeight="extrabold"
                         position="relative"
-                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#F28C28' }}
+                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#e47608' }}
                         _after={{
                             content: '""',
                             position: 'absolute',
@@ -211,16 +212,16 @@ const Navbar = () => {
                             transition: 'width 0.3s ease',
                         }}
                     >
-                        Academics
+                        ACADEMICS
                     </Link>
                     <Link
                         as={RouterLink}
                         to="/signup"
-                        fontSize="md"
-                        color="#F8F8F8"
-                        fontWeight="bold"
+                        fontSize="lg"
+                        color="#000000"
+                        fontWeight="extrabold"
                         position="relative"
-                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#F28C28' }}
+                        _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#e47608' }}
                         _after={{
                             content: '""',
                             position: 'absolute',
@@ -232,7 +233,7 @@ const Navbar = () => {
                             transition: 'width 0.3s ease',
                         }}
                     >
-                        Stat Tracker
+                        STAT TRACKER
                     </Link>
                 </Flex>
 
@@ -246,10 +247,10 @@ const Navbar = () => {
                             width="70%"
                             height="100vh"
                             bgColor="#00B2A9"
-                            bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
+                            bgImage="linear-gradient(-45deg, #000000 25%, transparent 25%, transparent 50%, #000000 50%, #000000 75%, transparent 75%, transparent)"
                             bgSize="1px 1px;"
                             zIndex="overlay"
-                            color="#F8F8F8"
+                            color="#000000"
                             borderTopLeftRadius="30px"
                             borderBottomLeftRadius="30px"
                             boxShadow="0 0 20px rgba(0, 0, 0, 0.9)"
@@ -257,7 +258,7 @@ const Navbar = () => {
                         >
                             <motion.div variants={itemVariants}>
                                 <Flex alignItems="center" justifyContent="space-between" mb="1rem">
-                                    <Text fontSize="xl" ml="20px">
+                                    <Text fontSize="lg" ml="20px">
                                         Menu
                                     </Text>
                                     <IconButton
@@ -282,51 +283,51 @@ const Navbar = () => {
                                         as={RouterLink}
                                         to="/"
                                         fontSize="lg"
-                                        color="#F8F8F8"
-                                        fontWeight="bold"
-                                        _hover={{ color: '#F28C28' }}
+                                        color="#000000"
+                                        fontWeight="extrabold"
+                                        _hover={{ color: '#e47608' }}
                                     >
-                                        Player Bio
+                                        PLAYER BIO
                                     </Link>
                                     <Link
                                         as={RouterLink}
                                         to="/login"
                                         fontSize="lg"
-                                        color="#F8F8F8"
-                                        fontWeight="bold"
-                                        _hover={{ color: '#F28C28' }}
+                                        color="#000000"
+                                        fontWeight="extrabold"
+                                        _hover={{ color: '#e47608' }}
                                     >
-                                        Hoops Film
+                                        HOOPS FILM
                                     </Link>
                                     <Link
                                         as={RouterLink}
                                         to="/signup"
                                         fontSize="lg"
-                                        color="#F8F8F8"
-                                        fontWeight="bold"
-                                        _hover={{ color: '#F28C28' }}
+                                        color="#000000"
+                                        fontWeight="extrabold"
+                                        _hover={{ color: '#e47608' }}
                                     >
-                                        Player Cards
+                                        PLAYER CARDS
                                     </Link>
                                     <Link
                                         as={RouterLink}
                                         to="/signup"
                                         fontSize="lg"
-                                        color="#F8F8F8"
-                                        fontWeight="bold"
-                                        _hover={{ color: '#F28C28' }}
+                                        color="#000000"
+                                        fontWeight="extrabold"
+                                        _hover={{ color: '#e47608' }}
                                     >
-                                        Academics
+                                        ACADEMICS
                                     </Link>
                                     <Link
                                         as={RouterLink}
                                         to="/signup"
                                         fontSize="lg"
-                                        color="#F8F8F8"
-                                        fontWeight="bold"
-                                        _hover={{ color: '#F28C28' }}
+                                        color="#000000"
+                                        fontWeight="extrabold"
+                                        _hover={{ color: '#e47608' }}
                                     >
-                                        Stat Tracker
+                                        STAT TRACKER
                                     </Link>
                                 </Flex>
                             </motion.div>

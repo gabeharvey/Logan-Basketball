@@ -34,6 +34,8 @@ function Card({ frontImg, name, bio, flipSound }) {
             bgSize="cover"
             bgPosition="center"
             borderRadius="12px"
+          borderColor="#F28C28"
+          borderWidth="3px"
             w="100%"
             h="100%"
             display="flex"
@@ -42,14 +44,16 @@ function Card({ frontImg, name, bio, flipSound }) {
           ></Box>
         </Box>
         <Box
-          bgColor="#00B2A9"
-          bgImage="linear-gradient(-45deg, #001f3f 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent)"
+          bgColor="#F8F8F8"
+          bgImage="linear-gradient(-45deg, #ebebeb 25%, transparent 25%, transparent 50%, #38393d 50%, #000000 75%, transparent 75%, transparent)"
           bgSize="1px 1px;"
           position="absolute"
           style={{ backfaceVisibility: 'hidden' }}
           w="100%"
           h="100%"
           borderRadius="12px"
+          borderColor="#F28C28"
+          borderWidth="3px"
           display="flex"
           flexDirection="column"
           alignItems="center"
@@ -58,11 +62,11 @@ function Card({ frontImg, name, bio, flipSound }) {
           transform="rotateY(180deg)"
           p={5}
         >
-          <Text fontSize="2xl" fontWeight="bold" color="#F8F8F8" fontFamily="'Coda', system-ui">
+          {/* <Text fontSize="2xl" fontWeight="bold" color="#F28C28" fontFamily="'Coda', system-ui">
             {name}
-          </Text>
-          <Text mt={4} color="#F8F8F8" fontFamily="'Coda', system-ui" fontWeight="bold">
-            Player Bio: {bio}
+          </Text> */}
+          <Text mt={4} color="#F8F8F8" fontFamily="'Coda', system-ui" fontSize="xl" fontWeight="medium" textAlign="center">
+          {bio}
           </Text>
         </Box>
       </Box>
@@ -75,42 +79,42 @@ function PlayerCards() {
 
   const players = [
     {
-      frontImg: "../football-player.png",
+      frontImg: "../basketball-placeholder.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez is a sharpshooter, with an average of 45% from three-point range, making him a dangerous player on the perimeter."
     },
     {
-      frontImg: "../gym-athlete.png",
+      frontImg: "../basketball-placeholder.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez is known for his explosive first step, allowing him to drive past defenders with ease."
     },
     {
-      frontImg: "../basketball-player1.png",
+      frontImg: "../basketball-placeholder.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez has a remarkable basketball IQ, enabling him to read defenses and make smart decisions on the court."
     },
     {
-      frontImg: "../basketball-player2.png",
+      frontImg: "../basketball-placeholder.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez excels in transition, averaging over 15 fast break points per game."
     },
     {
-      frontImg: "../basketball-player3.png",
+      frontImg: "../basketball-placeholder.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez has shown impressive defensive skills, regularly locking down the opponent's best scorer."
     },
     {
-      frontImg: "../basketball-player4.png",
+      frontImg: "../basketball-placeholder.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez possesses exceptional ball-handling skills, often leaving defenders off balance."
     },
     {
-      frontImg: "../basketball-player5.png",
+      frontImg: "../basketball-placeholder.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez is known for his clutch performances, scoring an average of 20 points in the fourth quarter."
     },
     {
-      frontImg: "../basketball-player6.png",
+      frontImg: "../basketball-placeholder.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez has developed a reliable mid-range jump shot, adding versatility to his offensive game."
     },
@@ -131,9 +135,13 @@ function PlayerCards() {
       mt={{ base: 12, md: 16 }} 
       mb={{ base: 12, md: 16 }} 
     >
-      <Text fontSize="2xl" color="#001f3f" fontFamily="'Coda', system-ui" fontWeight="bold">
-        Click on Card
+      <Text fontSize="3xl" fontWeight="medium" color="#F28C28" fontFamily="'Coda', system-ui">
+        Player Cards    
       </Text>
+      <Text fontSize="xl" fontWeight="medium" color="#ebebeb" fontFamily="'Coda', system-ui">
+        Click on a card to see player card info
+        </Text>
+
       <SimpleGrid
         columns={columns}
         spacing={{ base: 3, sm: 5 }} 
