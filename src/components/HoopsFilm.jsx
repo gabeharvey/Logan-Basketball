@@ -46,9 +46,9 @@ function VideoCard({ videoSrc, title, description }) {
 function HoopsFilm() {
   const videos = [
     {
-      videoSrc: "../video1.mp4",
-      title: "Logan's Highlight Reel 1",
-      description: "Top 10 plays of the season.",
+      videoSrc: "logan-vid-1.MOV",
+      title: "Logan Game Winner.",
+      description: "Buzzer Beater from Half Court.",
     },
     {
       videoSrc: "../video2.mp4",
