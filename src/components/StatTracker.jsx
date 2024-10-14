@@ -1,4 +1,4 @@
-import { Box, Text, VStack, Heading, Grid, Input, Button, FormControl, FormLabel } from '@chakra-ui/react';
+import { Box, Text, VStack, Heading, Grid, Input, Button, FormControl, FormLabel, Flex } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
@@ -53,6 +53,28 @@ function StatTracker() {
     });
   };
 
+  // Function to calculate averages
+  const calculateAverages = (statName) => {
+    const total = games.reduce((sum, game) => sum + (parseFloat(game[statName]) || 0), 0);
+    return games.length ? (total / games.length).toFixed(2) : 0;
+  };
+
+  const averagesHS = {
+    points: calculateAverages('points'),
+    assists: calculateAverages('assists'),
+    rebounds: calculateAverages('rebounds'),
+    steals: calculateAverages('steals'),
+    blocks: calculateAverages('blocks'),
+  };
+
+  const averagesTexasHardwork = {
+    points: calculateAverages('points'),
+    assists: calculateAverages('assists'),
+    rebounds: calculateAverages('rebounds'),
+    steals: calculateAverages('steals'),
+    blocks: calculateAverages('blocks'),
+  };
+
   return (
     <VStack
       spacing={8}
@@ -68,7 +90,57 @@ function StatTracker() {
       <Heading fontSize="3xl" fontWeight="medium" color="#F28C28" fontFamily="'Coda', system-ui">
         Game Stat Tracker
       </Heading>
+      <Flex gap={4} mb={6} justifyContent="center">
+        <MotionBox
+          w={{ base: '90%', md: '250px' }}
+          bgColor="#4B4B4B"
+          borderRadius="12px"
+          p={4}
+          boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
+          borderColor="#F28C28"
+          borderWidth="4px"
+        >
+          <Text 
+            color="#F8F8F8" 
+            fontWeight="bold" 
+            fontFamily="'Coda', system-ui" 
+            fontSize="sm"
+            textAlign="center" 
+          >
+            Steele HS Stats
+          </Text>
+          <Text color="#F8F8F8">Points: {averagesHS.points}</Text>
+          <Text color="#F8F8F8">Assists: {averagesHS.assists}</Text>
+          <Text color="#F8F8F8">Rebounds: {averagesHS.rebounds}</Text>
+          <Text color="#F8F8F8">Steals: {averagesHS.steals}</Text>
+          <Text color="#F8F8F8">Blocks: {averagesHS.blocks}</Text>
+        </MotionBox>
 
+        <MotionBox
+          w={{ base: '90%', md: '250px' }}
+          bgColor="#4B4B4B"
+          borderRadius="12px"
+          p={4}
+          boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
+          borderColor="#F28C28"
+          borderWidth="4px"
+        >
+          <Text 
+            color="#F8F8F8" 
+            fontWeight="bold" 
+            fontFamily="'Coda', system-ui" 
+            fontSize="sm"
+            textAlign="center" 
+          >
+            Texas Hardwork Stats
+          </Text>
+          <Text color="#F8F8F8">Points: {averagesTexasHardwork.points}</Text>
+          <Text color="#F8F8F8">Assists: {averagesTexasHardwork.assists}</Text>
+          <Text color="#F8F8F8">Rebounds: {averagesTexasHardwork.rebounds}</Text>
+          <Text color="#F8F8F8">Steals: {averagesTexasHardwork.steals}</Text>
+          <Text color="#F8F8F8">Blocks: {averagesTexasHardwork.blocks}</Text>
+        </MotionBox>
+      </Flex>
       <MotionBox
         w={{ base: '90%', md: '600px' }}
         bgColor="#F8F8F8"
@@ -90,17 +162,17 @@ function StatTracker() {
           <Grid gap={4}>
             {games.map((game, index) => (
               <Box key={index} p={3} bgColor="transparent" borderRadius="8px">
-                <Text color="#F8F8F8" fontWeight="bold" fontFamily="'Coda', system-ui">
+                <Text color="#000000" fontWeight="bold" fontFamily="'Coda', system-ui">
                   Game {index + 1} - Logan Gonzalez:
                 </Text>
-                <Text color="#F8F8F8">Team: {game.team}</Text>
-                <Text color="#F8F8F8">Opponent: {game.opponent}</Text>
-                <Text color="#F8F8F8">Date: {game.date}</Text>
-                <Text color="#F8F8F8">Points: {game.points}</Text>
-                <Text color="#F8F8F8">Assists: {game.assists}</Text>
-                <Text color="#F8F8F8">Rebounds: {game.rebounds}</Text>
-                <Text color="#F8F8F8">Steals: {game.steals}</Text>
-                <Text color="#F8F8F8">Blocks: {game.blocks}</Text>
+                <Text color="#000000">Team: {game.team}</Text>
+                <Text color="#000000">Opponent: {game.opponent}</Text>
+                <Text color="#000000">Date: {game.date}</Text>
+                <Text color="#000000">Points: {game.points}</Text>
+                <Text color="#000000">Assists: {game.assists}</Text>
+                <Text color="#000000">Rebounds: {game.rebounds}</Text>
+                <Text color="#000000">Steals: {game.steals}</Text>
+                <Text color="#000000">Blocks: {game.blocks}</Text>
               </Box>
             ))}
           </Grid>
@@ -159,7 +231,6 @@ function StatTracker() {
               value={gameInfo.date}
               name="date"
               onChange={handleGameInfoChange}
-              placeholder="Enter game date"
             />
           </FormControl>
           <FormControl>
@@ -173,6 +244,7 @@ function StatTracker() {
               name="points"
               onChange={handleInputChange}
               placeholder="Enter points"
+              type="number"
             />
           </FormControl>
           <FormControl>
@@ -186,6 +258,7 @@ function StatTracker() {
               name="assists"
               onChange={handleInputChange}
               placeholder="Enter assists"
+              type="number"
             />
           </FormControl>
           <FormControl>
@@ -199,6 +272,7 @@ function StatTracker() {
               name="rebounds"
               onChange={handleInputChange}
               placeholder="Enter rebounds"
+              type="number"
             />
           </FormControl>
           <FormControl>
@@ -212,6 +286,7 @@ function StatTracker() {
               name="steals"
               onChange={handleInputChange}
               placeholder="Enter steals"
+              type="number"
             />
           </FormControl>
           <FormControl>
@@ -225,22 +300,13 @@ function StatTracker() {
               name="blocks"
               onChange={handleInputChange}
               placeholder="Enter blocks"
+              type="number"
             />
           </FormControl>
           <Button
+            colorScheme="orange"
             onClick={handleAddGame}
             mt={4}
-            bgColor="#000000"
-            maxW="50%"
-            minW="45%"
-            color="#F8F8F8"
-            fontFamily="'Coda', system-ui"
-            fontWeight="medium"
-            fontSize="xl"
-            borderRadius="8px"
-            borderColor="#000000"
-            borderWidth="3px"
-            _hover={{ borderColor: '#F8F8F8' }}
           >
             Add Game
           </Button>
