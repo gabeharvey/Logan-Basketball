@@ -4,6 +4,7 @@ import Contact from './Contact';
 import StatTracker from './StatTracker';
 import HoopsFilm from './HoopsFilm';
 import Offers from './Offers';
+import Media from './Media';
 
 const MainLayout = () => {
   return (
@@ -19,6 +20,9 @@ const MainLayout = () => {
       </div>
       <div id="stat-tracker">
         <StatTracker />
+      </div>
+      <div id="media">
+        <Media />
       </div>
       <div id="offers">
         <Offers />

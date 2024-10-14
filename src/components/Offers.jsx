@@ -30,7 +30,7 @@ function Offers() {
         Scholarship Offers
       </Heading>
       <Flex
-        direction="column" // Stack items vertically
+        direction="column" 
         alignItems="center"
         width="100%"
       >
