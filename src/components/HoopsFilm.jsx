@@ -51,9 +51,9 @@ function HoopsFilm() {
       description: "Buzzer Beater from Half Court.",
     },
     {
-      videoSrc: "../video2.mp4",
-      title: "Logan's Training Session",
-      description: "Intense off-season workout.",
+      videoSrc: "logan-vid-2.mov",
+      title: "Logan Training",
+      description: "3 Pt Catch and Shoot.",
     },
     {
       videoSrc: "../video3.mp4",
