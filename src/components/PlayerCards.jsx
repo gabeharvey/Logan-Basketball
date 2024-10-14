@@ -79,42 +79,42 @@ function PlayerCards() {
 
   const players = [
     {
-      frontImg: "../basketball-placeholder.png",
+      frontImg: "logan-2.jpeg",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez is a sharpshooter, with an average of 45% from three-point range, making him a dangerous player on the perimeter."
     },
     {
-      frontImg: "../basketball-placeholder.png",
+      frontImg: "logan-3.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez is known for his explosive first step, allowing him to drive past defenders with ease."
     },
     {
-      frontImg: "../basketball-placeholder.png",
+      frontImg: "logan-4.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez has a remarkable basketball IQ, enabling him to read defenses and make smart decisions on the court."
     },
     {
-      frontImg: "../basketball-placeholder.png",
+      frontImg: "logan-5.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez excels in transition, averaging over 15 fast break points per game."
     },
     {
-      frontImg: "../basketball-placeholder.png",
+      frontImg: "logan-7.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez has shown impressive defensive skills, regularly locking down the opponent's best scorer."
     },
     {
-      frontImg: "../basketball-placeholder.png",
+      frontImg: "logan-8.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez possesses exceptional ball-handling skills, often leaving defenders off balance."
     },
     {
-      frontImg: "../basketball-placeholder.png",
+      frontImg: "logan-9.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez is known for his clutch performances, scoring an average of 20 points in the fourth quarter."
     },
     {
-      frontImg: "../basketball-placeholder.png",
+      frontImg: "logan-10.png",
       name: "Logan Gonzalez",
       bio: "Logan Gonzalez has developed a reliable mid-range jump shot, adding versatility to his offensive game."
     },
