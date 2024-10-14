@@ -29,7 +29,7 @@ function Media() {
             m="5"
             bgColor="#ebebeb"
             borderRadius="12px"
-            borderWidth="2px"
+            borderWidth="4px"
             borderColor="#F28C28"
             boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
             p={4}
@@ -44,7 +44,8 @@ function Media() {
               isExternal
               color="#000000"
               fontWeight="bold"
-              fontSize="lg"
+              fontSize="md" 
+              p={3} 
               _hover={{ color: '#e47608', textDecoration: 'underline' }}
             >
               {article.title}
