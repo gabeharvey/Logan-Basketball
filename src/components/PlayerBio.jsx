@@ -13,7 +13,6 @@ function PlayerProfile() {
       { title: "Position", description: "SG" },
       { title: "Height", description: "6'3\"" },
       { title: "Weight", description: "185 lbs" },
-      { title: "Date of Birth", description: "January 15, 2007" },
       { title: "Place of Birth", description: "San Antonio, TX" },
       { title: "High School", description: "Steele High School" },
       { title: "Team", description: "Texas Hardwork" },
@@ -59,7 +58,7 @@ function PlayerProfile() {
       </MotionBox>
       <MotionBox
         w={{ base: '90%', md: '500px' }}
-        h="850px"
+        h="750px"
         minW="320px"
         m="5"
         bgColor="#ebebeb"
