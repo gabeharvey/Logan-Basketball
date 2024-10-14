@@ -47,13 +47,13 @@ function HoopsFilm() {
   const videos = [
     {
       videoSrc: "logan-vid-1.MOV",
-      title: "Logan Game Winner.",
-      description: "Buzzer Beater from Half Court.",
+      title: "Logan Game Winner",
+      description: "Buzzer Beater from Half Court",
     },
     {
       videoSrc: "logan-vid-2.mov",
       title: "Logan Training",
-      description: "3 Pt Catch and Shoot.",
+      description: "3 Pt Catch and Shoot",
     },
     {
       videoSrc: "../video3.mp4",
