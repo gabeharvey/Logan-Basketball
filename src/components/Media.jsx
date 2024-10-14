@@ -25,7 +25,7 @@ function Media() {
           <MotionBox
             key={index}
             w={{ base: '90%', md: '500px' }}
-            h="80px"
+            h="120px"
             m="5"
             bgColor="#ebebeb"
             borderRadius="12px"
