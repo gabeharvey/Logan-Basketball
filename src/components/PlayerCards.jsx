@@ -44,7 +44,7 @@ function Card({ frontImg, bio, flipSound }) {
           ></Box>
         </Box>
         <Box
-          bgColor="#F8F8F8"
+          bgColor="#4B4B4B"
           bgImage="linear-gradient(-45deg, #ebebeb 25%, transparent 25%, transparent 50%, #38393d 50%, #000000 75%, transparent 75%, transparent)"
           bgSize="1px 1px;"
           position="absolute"
