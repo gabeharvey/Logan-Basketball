@@ -107,7 +107,7 @@ function StatTracker() {
             fontSize="sm"
             textAlign="center" 
           >
-            Steele HS Stats
+            Steele High School Stats
           </Text>
           <Text color="#F8F8F8">Points: {averagesHS.points}</Text>
           <Text color="#F8F8F8">Assists: {averagesHS.assists}</Text>
