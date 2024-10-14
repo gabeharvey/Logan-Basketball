@@ -15,7 +15,7 @@ function PlayerProfile() {
       { title: "Weight", description: "185 lbs" },
       { title: "Place of Birth", description: "San Antonio, TX" },
       { title: "High School", description: "Steele High School" },
-      { title: "Team", description: "Texas Hardwork" },
+      { title: "Club Team", description: "Texas Hardwork" },
     ],
   };
 

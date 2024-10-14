@@ -3,14 +3,14 @@ import {
     Flex,
     Heading,
     Spacer,
-    Link,
+    Link as ChakraLink,
     IconButton,
     useDisclosure,
     Divider,
     Text,
 } from '@chakra-ui/react';
 import { CloseIcon } from '@chakra-ui/icons';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { CgMenuGridO } from 'react-icons/cg';
 import { useEffect, useRef, useState } from 'react';
@@ -20,11 +20,11 @@ const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [showCloseIcon, setShowCloseIcon] = useState(false);
     const menuRef = useRef();
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 1180);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1240);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 1180);
+            setIsMobile(window.innerWidth < 1240);
         };
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
@@ -78,17 +78,22 @@ const Navbar = () => {
         >
             <Flex alignItems="center" justifyContent="space-between" wrap="wrap">
                 <Flex
-                    flexDirection={isMobile ? 'column' : 'row'} 
+                    flexDirection={isMobile ? 'column' : 'row'}
                     alignItems={isMobile ? 'flex-start' : 'center'}
                 >
                     <Heading
-                        as={RouterLink}
-                        to="/"
-                        fontSize={{ base: '2xl', md: '3xl' }} 
+                        as={ScrollLink}
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        fontSize={{ base: '2xl', md: '3xl' }}
                         fontFamily="'Coda', system-ui"
                         color="#000000"
                         letterSpacing="wider"
-                        mb={isMobile ? 2 : 0} 
+                        mb={isMobile ? 2 : 0}
+                        style={{ cursor: 'pointer' }}
                     >
                         Logan Gonzalez #0
                     </Heading>
@@ -136,11 +141,15 @@ const Navbar = () => {
                     justifyContent="space-evenly"
                     whiteSpace="nowrap"
                 >
-                    {['PLAYER BIO', 'HOOPS FILM', 'PLAYER CARDS', 'ACADEMICS', 'STAT TRACKER'].map((text, index) => (
-                        <Link
+                    {['PLAYER BIO', 'HOOPS FILM', 'PLAYER CARDS', 'STAT TRACKER', 'OFFERS', 'CONTACT'].map((text, index) => (
+                        <ChakraLink
                             key={index}
-                            as={RouterLink}
-                            to="/"
+                            as={ScrollLink}
+                            to={text.replace(' ', '-').toLowerCase()} 
+                            spy={true}
+                            smooth={true}
+                            offset={-100} 
+                            duration={500}
                             fontSize="lg"
                             fontWeight="extrabold"
                             color="#000000"
@@ -157,12 +166,12 @@ const Navbar = () => {
                                 transition: 'width 0.3s ease',
                             }}
                             _hoverAfter={{ width: '100%' }}
+                            style={{ cursor: 'pointer' }}
                         >
                             {text}
-                        </Link>
+                        </ChakraLink>
                     ))}
                 </Flex>
-
                 {isOpen && (
                     <motion.div
                         initial="hidden"
@@ -200,19 +209,24 @@ const Navbar = () => {
                             </Flex>
                             <Divider />
                             <Flex as="ul" flexDirection="column" alignItems="flex-start" gap="1rem" mt="1rem">
-                                {['PLAYER BIO', 'HOOPS FILM', 'PLAYER CARDS', 'ACADEMICS', 'STAT TRACKER'].map((text, index) => (
-                                    <Link
+                                {['PLAYER BIO', 'HOOPS FILM', 'PLAYER CARDS', 'STAT TRACKER', 'OFFERS', 'CONTACT'].map((text, index) => (
+                                    <ChakraLink
                                         key={index}
-                                        as={RouterLink}
-                                        to="/"
+                                        as={ScrollLink}
+                                        to={text.replace(' ', '-').toLowerCase()} 
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-100}
+                                        duration={500}
                                         fontSize="lg"
                                         fontWeight="extrabold"
                                         color="#000000"
                                         position="relative"
                                         _hover={{ transform: 'scale(1.05)', transition: 'transform 0.2s', color: '#e47608' }}
+                                        style={{ cursor: 'pointer' }}
                                     >
                                         {text}
-                                    </Link>
+                                    </ChakraLink>
                                 ))}
                             </Flex>
                         </Box>

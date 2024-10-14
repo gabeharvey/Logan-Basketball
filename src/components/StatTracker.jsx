@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const MotionBox = motion(Box);
 
-function BasketballStatTracker() {
+function StatTracker() {
   const [stats, setStats] = useState({
     points: '',
     assists: '',
@@ -250,4 +250,4 @@ function BasketballStatTracker() {
   );
 }
 
-export default BasketballStatTracker;
+export default StatTracker;
