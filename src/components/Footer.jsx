@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { IconButton, Flex, Box } from '@chakra-ui/react';
-import { FaFacebookF, FaInstagram, FaSnapchatGhost } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaSnapchatGhost, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -33,7 +33,7 @@ function Footer() {
               />
               <IconButton
                 as={Link}
-                to="https://instagram.com"
+                to="https://www.instagram.com/_logangonz/"
                 aria-label="Instagram"
                 icon={<FaInstagram />}
                 variant="ghost"
@@ -50,6 +50,26 @@ function Footer() {
                 color="#000000"
                 fontSize="24px"
                 _hover={{ color: 'yellow' }}
+              />
+              <IconButton
+                as={Link}
+                to="https://x.com/logangonzalez0" 
+                aria-label="X"
+                icon={<FaTwitter />}
+                variant="ghost"
+                color="#000000"
+                fontSize="24px"
+                _hover={{ color: '#1DA1F2' }} 
+              />
+              <IconButton
+                as={Link}
+                to="https://www.youtube.com/@samgonzalez8333"
+                aria-label="YouTube"
+                icon={<FaYoutube />}
+                variant="ghost"
+                color="#000000"
+                fontSize="24px"
+                _hover={{ color: 'red.500' }} 
               />
             </Flex>
             <Flex alignItems="center" justifyContent="center"> 
