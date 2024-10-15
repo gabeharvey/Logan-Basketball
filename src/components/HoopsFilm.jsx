@@ -61,14 +61,14 @@ function HoopsFilm() {
       description: "Steele HS vs Cedar Creek HS",
     },
     {
-      videoSrc: "../video4.mp4",
-      title: "Logan's Defense Highlights",
-      description: "Lockdown defensive plays.",
+      videoSrc: "logan-vid-4.MOV",
+      title: "Logan 6-12 22 Pts",
+      description: "Steele HS vs St Michael's HS",
     },
     {
-      videoSrc: "../video5.mp4",
-      title: "Logan's Dunk Compilation",
-      description: "Powerful dunks and finishes.",
+      videoSrc: "logan-vid-5.MOV",
+      title: "Logan 40% from 3",
+      description: "Steele HS vs Brennan HS, Antonian HS",
     },
     {
       videoSrc: "../video6.mp4",
