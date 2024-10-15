@@ -56,9 +56,9 @@ function HoopsFilm() {
       description: "3 Pt Catch and Shoot",
     },
     {
-      videoSrc: "../video3.mp4",
-      title: "Logan's Game-Winning Shots",
-      description: "Best clutch moments.",
+      videoSrc: "logan-vid-3.MOV",
+      title: "Logan 6-10 22 Pts",
+      description: "Steele HS vs Cedar Creek HS",
     },
     {
       videoSrc: "../video4.mp4",
