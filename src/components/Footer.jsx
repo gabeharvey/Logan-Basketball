@@ -70,7 +70,7 @@ function Footer() {
             <Flex alignItems="center" justifyContent="center">
               <div>
                 <a href="https://athletexelite.com" target="_blank" rel="noopener noreferrer" className="tilt-prism-footer">
-                  Athlete X Elite
+                  Athlete X Elite | 1/1
                 </a>
               </div>
             </Flex>
