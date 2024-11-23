@@ -1,5 +1,8 @@
-import { Box, Text, VStack, Heading, Grid , Flex} from '@chakra-ui/react';
+import { Box, Text, VStack, Heading, Grid , Flex, IconButton, Image } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import { FaFacebookF, FaInstagram, FaSnapchatGhost, FaYoutube } from 'react-icons/fa';
+import XLogo from '/x-logo.png';
+import { Link } from 'react-router-dom';
 
 const MotionBox = motion.create(Box); 
 
@@ -58,7 +61,7 @@ function PlayerProfile() {
       </MotionBox>
       <MotionBox
         w={{ base: '90%', md: '500px' }}
-        h="750px"
+        h="770px"
         minW="320px"
         m="5"
         bgColor="#ebebeb"
@@ -85,6 +88,57 @@ function PlayerProfile() {
             </Box>
           ))}
         </Grid>
+        <Flex alignItems="center" justifyContent="center" flexDirection={['row', 'row']} gap="1rem">
+              <IconButton
+                as={Link}
+                to="https://facebook.com"
+                aria-label="Facebook"
+                icon={<FaFacebookF />}
+                variant="ghost"
+                color="#000000"
+                fontSize="24px"
+                _hover={{ color: 'blue.500' }}
+              />
+              <IconButton
+                as={Link}
+                to="https://www.instagram.com/_logangonz/"
+                aria-label="Instagram"
+                icon={<FaInstagram />}
+                variant="ghost"
+                color="#000000"
+                fontSize="24px"
+                _hover={{ color: 'pink.500' }}
+              />
+              <IconButton
+                as={Link}
+                to="https://snapchat.com"
+                aria-label="Snapchat"
+                icon={<FaSnapchatGhost />}
+                variant="ghost"
+                color="#000000"
+                fontSize="24px"
+                _hover={{ color: 'yellow' }}
+              />
+              <IconButton
+                as={Link}
+                to="https://x.com/logangonzalez0"
+                aria-label="X"
+                icon={<Image src={XLogo} alt="X Logo" boxSize="24px" />}
+                variant="ghost"
+                color="#000000"
+                _hover={{ color: '#000000' }}
+              />
+              <IconButton
+                as={Link}
+                to="https://www.youtube.com/@samgonzalez8333"
+                aria-label="YouTube"
+                icon={<FaYoutube />}
+                variant="ghost"
+                color="#000000"
+                fontSize="24px"
+                _hover={{ color: 'red.500' }}
+              />
+            </Flex>
       </MotionBox>
       {/* </Box> */}
       </Flex>
